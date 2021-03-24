@@ -1,0 +1,43 @@
+{
+    "development": {
+        "HOST": "localhost",
+        "DOMAIN_HOST": "localhost",
+        "DOMAIN_PROTOCOL": "http",
+        "PORT": 9000,
+        "APP_VERSION": "V1",
+        "SMTP_MAIL": "venkateshm@cindura.com",
+        "SMTP_PWD": "Appa@123",
+        "SMTP_SERVICE": "gmail",
+        "SMTP_HOST": "smtp.gmail.com",
+        "SMTP_PORT": 465,
+        "SMTP_SECURE": false
+    },
+    "staging": {
+        "HOST": "localhost",
+        "DOMAIN_HOST": "localhost",
+        "DOMAIN_PROTOCOL": "http",
+        "PORT": 9000,
+        "APP_VERSION": "V1",
+        "SMTP_MAIL": "venkateshm@cindura.com",
+        "SMTP_PWD": "Appa@123",
+        "SMTP_SERVICE": "gmail",
+        "SMTP_HOST": "smtp.gmail.com",
+        "SMTP_PORT": 465,
+        "SMTP_SECURE": false
+    },
+    "production": {
+        "HOST": "localhost",
+        "DOMAIN_HOST": "localhost",
+        "DOMAIN_PROTOCOL": "http",
+        "PORT": 9000,
+        "APP_VERSION": "V1",
+        "SMTP_MAIL": "venkateshm@cindura.com",
+        "SMTP_PWD": "Appa@123",
+        "SMTP_SERVICE": "gmail",
+        "SMTP_HOST": "smtp.gmail.com",
+        "SMTP_PORT": 465,
+        "SMTP_SECURE": false
+    },
+    "DEFAULT_RECORD_LIMIT": 15,
+    "ATTACHMENT_FILE_SIZE": 30000000
+}

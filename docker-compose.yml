@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres:12-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dev_viravu
+    ports: 
+      - '5432:5432'
+    container_name: postgres-db
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+  app:
+    build: 
+      context: .
+    container_name: node-app
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: host.docker.internal
+      DB_USER: postgres
+      DB_PASSWORD: password
+    ports:
+      - "7000:7000"
+volumes:
+  postgres-db:

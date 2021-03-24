@@ -1,0 +1,32 @@
+{
+  "development": {
+      "username": "process.env.DB_SCHEMA",
+      "password": "password",
+      "database": "dev_viravu",
+      "host": "localhost",
+      "port": 5432,
+      "dialect": "postgres",
+      "operatorsAliases": "Sequelize.Op",
+      "logging": false
+  },
+  "staging": {
+      "username": "postgres",
+      "password": "password",
+      "database": "viravu",
+      "host": "localhost",
+      "port": 5432,
+      "dialect": "postgres",
+      "operatorsAliases": "Sequelize.Op",
+      "logging": false
+  },
+  "production": {
+      "username": "postgres",
+      "password": "password",
+      "database": "viravu",
+      "host": "localhost",
+      "port": 5432,
+      "dialect": "postgres",
+      "operatorsAliases": "Sequelize.Op",
+      "logging": false
+  }
+}
